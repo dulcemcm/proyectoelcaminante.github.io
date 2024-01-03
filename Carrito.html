@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../css/estiloCarrito.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/estiloFooter.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <article class="logo">
+                <a href="/index.html"> <img src="assets/logo.png" alt="logo"></a>
+            </article>
+            <article>
+                <ul class="barra-nav">
+                    <li class="menu-horizontal"><a href="/index.html">Inicio</a></li>
+                    <li class="menu-horizontal"><a href="#">Tienda</a>
+                        <ul class="menu-vertical">
+                            <li><a href="seccionHombre.html">Hombre</a></li>
+                            <li><a href="seccionMujer.html">Mujer</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-horizontal"><a href="nosotros.html">Nosotros</a></li>
+                    <li class="menu-horizontal"><a href="contacto.html">Contáctanos</a></li>
+                    <li class="menu-horizontal"><a href="Carrito.html"><img src="assets/carrito.svg" alt="carrito"></a></li>
+                </ul>
+            </article>
+            <article class="menu-celular">
+                <div class="menu-ham"><img src="assets/menu.svg" alt="menu-ham">
+                    <ul class="menu">
+                        <li><a href="./index.php" >Inicio</a></li>
+                        <li><a href="#" >Tienda</a>
+                            <ul class="menu-vertical">
+                                <li><a href="seccionHombre.html">Hombre</a></li>
+                                <li><a href="seccionMujer.html">Mujer</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="Carrito.html"><img src="assets/carrito-celu.svg" alt="carrito"></a></li>
+                    </ul>
+                </div>
+            </article>
+        </nav>
+    </header>
+    <div class="container">
+        <table class="table">
+            <caption>Carrito de compras</caption>
+            <thead>
+                <tr>
+                    <th scope="col" colspan="2">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="product-image">
+                        <img src="../Images/zapato1.jpg " alt="Zapato 1">
+                    </td>
+                    <td class="product-info">Zapato 1</td>
+                    <td>1</td>
+                    <td>699.0 MX</td>
+                    <td><button class="delete-button">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td class="product-image">
+                        <img src="../Images/zapato6.jpg" alt="Zapato 6">
+                    </td>
+                    <td class="product-info">Zapato 6</td>
+                    <td>1</td>
+                    <td>699.0 MX</td>
+                    <td><button class="delete-button">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td class="product-image">
+                        <img src="../Images/zapato9.jpg" alt="Zapato 9">
+                    </td>
+                    <td class="product-info">Zapato 9</td>
+                    <td>1</td>
+                    <td>699.00 MX</td>
+                    <td><button class="delete-button">Eliminar</button></td>
+                </tr>
+              
+            </tbody>
+        </table>
+
+        <div class="total">
+            <p>Total: <span id="total-amount">2097.00 MX</span></p>
+        </div>
+
+        <input type="submit" value="COMPRAR AHORA" class="boton">
+    </div>
+    <footer>
+        <ul class="menu-horizontal">
+            <li><a href="">Envía tus comentarios</a></li>
+            <li><a href="">Obtener ayuda</a></li>
+            <li>
+                <img src="../assets/LogoFb.png" alt="Facebook" usemap="#redes-sociales" width= "50rem" height="50rem" >
+            
+                <map name="redes-sociales">
+                <area shape="rect" coords="0,0,100,100" href="https://www.facebook.com" alt="Facebook" title="Síguenos en Facebook">
+                </map>
+            </li>
+            <li>
+                <img src="../assets/logoInsta.png" alt="Instagram" usemap="#instagram" width="50rem"height="50rem">
+            
+                <map name="instagram">
+                <area shape="rect" coords="0,0,100,100" href="https://www.instagram.com" alt="Instagram" title="Síguenos en Instagram">
+                </map>
+            </li>
+          <ul>
+      </footer>
+</body>
+</html>

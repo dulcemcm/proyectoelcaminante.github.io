@@ -1,0 +1,66 @@
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .body{
+        height: 100%;
+        width: 100%;
+
+    }
+    .sec-hombre {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: #fefeed88;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+
+    .producto {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        width: calc(25% - 20px); /* 3 columnas en pantalla grande */
+        margin: 10px;
+        
+    }
+    .producto img {
+        width: 10rem;
+        height: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .producto button {
+        height: 2rem;
+        width: 8rem;
+        background-color: #1A3D7D;
+        font-family: 'EB Garamond', serif ;
+        color: #FEFEED;
+        border-radius: 5px;
+        border: 2px solid #FEFEED;
+        align-content: flex-end;
+        margin-top: 10px; /* Agregar espacio entre la imagen y el botón */
+        transition: color 0.4s;
+    }
+    .producto p{
+        color: #1A3D7D;
+        font-family:  'EB Garamond';
+    }
+    .producto button:hover{
+        color: #FFA500;
+    }
+
+    @media (max-width:800px) {
+    .producto {
+        width: calc(33.33% - 20px); /* 3 columnas en pantalla mediana */
+    }
+    }
+    @media (max-width: 600px) {
+    .producto {
+        width: calc(50% - 20px); /* 2 columnas en pantalla pequeña */
+    }
+}
